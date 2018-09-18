@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    {% if title %}
+    <title>{{title}} | Project Name</title>
+    {% else %}
+    <title>Project Name</title>
+    {% endif %}
+</head>
+<body>
+<h1><img src="static/logo.png"> Project Name</h1>
+<hr>
+<!-- header/navbar -->
+{% block content %}
+{% endblock %}
+<!-- footer -->
+<hr>
+<p>Copyright (c) 2018 Project Name. All rights reserved.</p>
+</body>
+</html>
